@@ -27,18 +27,16 @@
 		
 		<div class="votes">
 			<!-- IF !reputation:disabled -->
-						<div class="btn-group">
-							<button component="post/upvote" class="upvote btn btn-sm btn-default <!-- IF posts.upvoted --> upvoted btn-primary <!-- ENDIF posts.upvoted -->">
-								<i class="fa fa-chevron-up"></i>
-							</button>
-							<button component="post/vote-count" class="votes btn btn-sm btn-default" data-votes="{posts.votes}">{posts.votes}</button>
-							<!-- IF !downvote:disabled -->
-							<button component="post/downvote" class="downvote btn btn-sm btn-default <!-- IF posts.downvoted --> downvoted btn-primary <!-- ENDIF posts.downvoted -->">
-								<i class="fa fa-chevron-down"></i>
-							</button>
-							<!-- ENDIF !downvote:disabled -->
-						</div>
-		<!-- ENDIF !reputation:disabled -->
+			<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
+				<i class="fa fa-chevron-up"></i>
+			</a>
+			<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
+			<!-- IF !downvote:disabled -->
+			<a component="post/downvote" href="#" class="<!-- IF posts.downvoted -->downvoted<!-- ENDIF posts.downvoted -->">
+				<i class="fa fa-chevron-down"></i>
+			</a>
+			<!-- ENDIF !downvote:disabled -->
+			<!-- ENDIF !reputation:disabled -->
 		</div>
 
 		<!-- IMPORT partials/topic/post-menu.tpl -->
