@@ -24,7 +24,9 @@
 				<a component="post/quote" class="no-select <!-- IF !privileges.topics:reply -->hidden<!--ENDIF !privileges.topics:reply -->">[[topic:quote]]</a>
 			</span>
 		</div>
-		<!-- IF !reputation:disabled -->
+		
+		<div class="votes">
+			<!-- IF !reputation:disabled -->
 						<div class="btn-group">
 							<button component="post/upvote" class="upvote btn btn-sm btn-default <!-- IF posts.upvoted --> upvoted btn-primary <!-- ENDIF posts.upvoted -->">
 								<i class="fa fa-chevron-up"></i>
@@ -37,18 +39,6 @@
 							<!-- ENDIF !downvote:disabled -->
 						</div>
 		<!-- ENDIF !reputation:disabled -->
-		<div class="votes">
-			<!-- IF !reputation:disabled -->
-			<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
-				<i class="fa fa-chevron-up"></i>
-			</a>
-			<span component="post/vote-count" data-votes="{posts.votes}">{posts.votes}</span>
-			<!-- IF !downvote:disabled -->
-			<a component="post/downvote" href="#" class="<!-- IF posts.downvoted -->downvoted<!-- ENDIF posts.downvoted -->">
-				<i class="fa fa-chevron-down"></i>
-			</a>
-			<!-- ENDIF !downvote:disabled -->
-			<!-- ENDIF !reputation:disabled -->
 		</div>
 
 		<!-- IMPORT partials/topic/post-menu.tpl -->
