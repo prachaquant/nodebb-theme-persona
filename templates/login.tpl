@@ -1,6 +1,19 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
 
 <div class="row">
+	<!-- IF alternate_logins -->
+	<div class="<!-- IF allowLocalLogin -->col-md-6<!-- ELSE -->col-md-12<!-- ENDIF allowLocalLogin -->">
+		<div class="well well-lg">
+			<h4>[[login:alternative_logins]]</h4>
+			<ul class="alt-logins">
+				<!-- BEGIN authentication -->
+				<li class="{authentication.name}"><a rel="nofollow" target="_top" href="{config.relative_path}{authentication.url}"><i class="fa {authentication.icon} fa-3x"></i></a></li>
+				<!-- END authentication -->
+			</ul>
+		</div>
+	</div>
+	<!-- ENDIF alternate_logins -->
+	
 	<!-- IF allowLocalLogin -->
 	<div class="<!-- IF alternate_logins -->col-md-6<!-- ELSE -->col-md-12<!-- ENDIF alternate_logins -->">
 		<div class="well well-lg">
@@ -50,16 +63,5 @@
 	</div>
 	<!-- ENDIF allowLocalLogin -->
 
-	<!-- IF alternate_logins -->
-	<div class="<!-- IF allowLocalLogin -->col-md-6<!-- ELSE -->col-md-12<!-- ENDIF allowLocalLogin -->">
-		<div class="well well-lg">
-			<h4>[[login:alternative_logins]]</h4>
-			<ul class="alt-logins">
-				<!-- BEGIN authentication -->
-				<li class="{authentication.name}"><a rel="nofollow" target="_top" href="{config.relative_path}{authentication.url}"><i class="fa {authentication.icon} fa-3x"></i></a></li>
-				<!-- END authentication -->
-			</ul>
-		</div>
-	</div>
-	<!-- ENDIF alternate_logins -->
+	
 </div>
