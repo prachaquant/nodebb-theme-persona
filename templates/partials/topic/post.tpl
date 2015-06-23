@@ -21,9 +21,6 @@
 
 			<span class="post-tools">
 				<a component="post/quote" class="no-select <!-- IF !privileges.topics:reply -->hidden<!--ENDIF !privileges.topics:reply -->">[[topic:quote]]</a>
-				<li role="presentation">
-				<a class="facebook-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-facebook"></i></span> Facebook</a>
-				</li>
 			</span>
 		</div>
 		
