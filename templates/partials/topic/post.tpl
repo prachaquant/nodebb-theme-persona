@@ -22,7 +22,7 @@
 			<span class="post-tools">
 				<a component="post/quote" class="no-select <!-- IF !privileges.topics:reply -->hidden<!--ENDIF !privileges.topics:reply -->">[[topic:quote]]</a>
 			</span>
-			<a class="facebook-share" href="#"><span class="menu-icon"><i class="fa fa-facebook"></i></span>ประกาศให้โลกรู้</a>
+			<a class="facebook-share" href="#"><span class="menu-icon"><i class="fa fa-facebook"></i></span>ให้โลกรู้</a>
 		</div>
 	
 		<div class="votes">
