@@ -23,7 +23,7 @@
 				<a component="post/quote" class="no-select <!-- IF !privileges.topics:reply -->hidden<!--ENDIF !privileges.topics:reply -->">[[topic:quote]]</a>
 			</span>
 		</div>
-		<a class="facebook-share" href="#"><span class="menu-icon"><i class="fa fa-facebook"></i></span>Share</a>
+		<a class="facebook-share" href="#">ประกาศให้โลกรู้</a>
 		<div class="votes">
 			<!-- IF !reputation:disabled -->
 			<a component="post/upvote" href="#" class="<!-- IF posts.upvoted -->upvoted<!-- ENDIF posts.upvoted -->">
